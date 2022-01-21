@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Aravind Warehouse</title>
+    <title>SB Admin 2 - Blank</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,14 +35,14 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Arvind Warehouse<sup></sup></div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -53,7 +53,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Customer
+                Interface
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -61,13 +61,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Customer</span>
+                    <span>Components</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                          <a class="collapse-item" href="#">Customer Details</a>
-
-
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
                     </div>
                 </div>
             </li>
@@ -77,13 +77,16 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Warehouse</span>
+                    <span>Utilities</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="#">Warehouse Details</a>
-
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
                     </div>
                 </div>
             </li>
@@ -93,24 +96,43 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Data
+                Addons
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Trouble Ticket</span></a>
+                    <span>Charts</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Records</span></a>
+                    <span>Tables</span></a>
             </li>
 
             <!-- Divider -->
@@ -119,13 +141,6 @@
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
             </div>
 
         </ul>
@@ -141,11 +156,9 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </form>
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Search -->
                     <form
@@ -347,92 +360,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Records</h1>
-
-
-                    <!-- DataTales Example -->
-
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="200%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Brand Name</th>
-                                            <th>Warehouse Location</th>
-                                            <th>Cloth Type</th>
-                                            <th>Quantity</th>
-                                            <th>Delivery Date</th>
-                                            <th>Amount</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Allen Solly</td>
-                                            <td>Chennai,Tamil Nadu</td>
-                                            <td>Woolen</td>
-                                            <td>139</td>
-                                            <td>31/1/2022</td>
-                                            <td>$32,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Allen Solly</td>
-                                            <td>Agra,New Delhi</td>
-                                            <td>Cotton</td>
-                                            <td>263</td>
-                                            <td>4/2/2022</td>
-                                            <td>$99,750</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Peter England</td>
-                                            <td>Banglore,Karnataka</td>
-                                            <td>Cotton,Woolen</td>
-                                            <td>590</td>
-                                            <td>3/3/2022</td>
-                                            <td>$4,56,090</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pantaloons</td>
-                                            <td>Hosur,Tamil Nadu</td>
-                                            <td>Silk</td>
-                                            <td>209</td>
-                                            <td>25/2/2002</td>
-                                            <td>$1,34,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trends</td>
-                                            <td>Hosur,TamilNadu</td>
-                                            <td>Silk</td>
-                                            <td>330</td>
-                                            <td>26/2/2022</td>
-                                            <td>$99,700</td>
-                                        </tr>
-                                        <tr>
-                                              <td>Trends</td>
-                                              <td>Tirunelveli,TamilNadu</td>
-                                              <td>Cotton</td>
-                                              <td>335</td>
-                                              <td>26/2/2022</td>
-                                              <td>$1,00,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Trends</td>
-                                            <td>Jayadeva,Banglore</td>
-                                            <td>Silk</td>
-                                            <td>1200</td>
-                                            <td>26/2/2022</td>
-                                            <td>$6,00,700</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -444,7 +372,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright Arvind Warehouse 2022</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
@@ -490,13 +418,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
